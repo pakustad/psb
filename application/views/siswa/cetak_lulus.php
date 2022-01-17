@@ -32,7 +32,7 @@
     </center>
 
     <br>
-    Kepala SMA Pesantren Terpadu Hayatan Thayyibah, dengan ini menyatakan bahwa :<br /><br />
+    Panitia PPDB SMA Pesantren Terpadu Hayatan Thayyibah, dengan ini menyatakan bahwa :<br /><br />
     <center>
       <table width="60%" border="0">
         <tr>
@@ -262,7 +262,7 @@
         <b>Zaenal Arifin, S.TP., M.Pd.</b>
       </span>
       <span style="padding-right: 15%; float: right;">
-        Sukabumi, <?php echo date('d F Y'); ?><br>
+        Sukabumi, <?= format_tgl(date('Y-m-d')); ?><br>
         Ketua PPDB,<br>
         <br><br><br>
         <b>Abdul Kohar, S.Sos.I., M.M.</b>

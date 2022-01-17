@@ -50,7 +50,7 @@ jQuery(function(){
 function thn()
 {
   var thn = $('[name="thn"]').val();
-    window.location = "panel_admin/statistik/thn/"+thn;
+    window.location = "panel_admin/statistik/thn/";
 }
 $('[name="thn"]').select2({
     placeholder: "- Tahun -"

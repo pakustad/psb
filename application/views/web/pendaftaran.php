@@ -61,7 +61,7 @@
               <div style="margin-top:-8px;">
               <h2>
 								<strong class="text-primary">
-									<a href=""><img src="img/logo.png" alt="Logo" width="30" style="position:absolute;margin-top:-3px;"> <span style="margin-left:35px;color:#fff;">PPDB Online</span></a>
+									<a href=""><img src="img/logo.svg" alt="Logo" width="30" style="position:absolute;margin-top:-3px;"> <span style="margin-left:35px;color:#fff;">PPDB Online</span></a>
 								</strong>
 							</h>
               </div>

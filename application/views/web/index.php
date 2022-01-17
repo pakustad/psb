@@ -38,7 +38,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top"><img src="img/logo.png" alt="Logo" width="30" style="position:absolute;margin-top:-5px;"> <span style="margin-left:35px;">PPDB Online</span> </a>
+                <a class="navbar-brand" href="#page-top"><img src="img/logo.svg" alt="Logo" width="30" style="position:absolute;margin-top:-5px;"> <span style="margin-left:35px;">PPDB Online</span> </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -48,7 +48,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio"><img src="img/logo.png" alt="Logo" width="15"> Tentang Sekolah</a>
+                        <a href="#portfolio"><img src="img/logo.svg" alt="Logo" width="15"> Tentang Sekolah</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about"><i class="fa fa-info-circle"></i> Informasi</a>
@@ -72,8 +72,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12" ><br><br>
-                    <img class="img-responsive" src="img/logo.png" style="margin-top:-15%;margin-bottom:-10px;" width="100">
-                    <div class="intro-text">
+                    <img class="img-responsive" src="img/logo.svg" style="margin-top:-15%;margin-bottom:-10px;" width="100">
+                    <div class="intro-text"><br />
                         <span class="name shad" style="font-size:35px">PPDB ONLINE <br> SMA PESANTREN TERPADU HAYATAN THAYYIBAH</span>
 
                         <br>
@@ -125,7 +125,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/logo.png" class="img-thumbnail" alt=""><br><br>
+                        <img src="img/logo.svg" class="img-thumbnail" alt=""><br><br>
                         <span class="btn btn-success btn-block">smahatoy.sch.id</span>
                     </a>
                 </div>

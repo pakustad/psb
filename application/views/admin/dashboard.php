@@ -88,13 +88,13 @@ $tgl = date('m-Y');
     </div>
     <!-- /dashboard content -->
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="panel panel-flat col-md-12">
         <div class="panel-body">
           <fieldset class="content-group">
             <legend class="text-bold"><i class="icon-stats-dots"></i> Grafik Statistik Pendaftaran Siswa Tahun 2022/2023</legend>
-            <?php $this->load->view('admin/statistik/pendaftar'); ?>
+            <!?php $this->load->view('admin/statistik/pendaftar'); ?>
           </fieldset>
         </div>
       </div>
-    </div>
+    </div> -->

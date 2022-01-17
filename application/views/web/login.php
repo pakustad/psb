@@ -9,7 +9,7 @@
             <a href=""><i class="fa fa-times" style="color:#fff"></i></a></span>
             </div>
             <h4 class="text-success"><br><br>
-               <img src="img/logo.png" width="100">
+               <img src="img/logo.svg" width="100"><br />
                Login Administrasi Calon Siswa
             </h4>
             <div class="col-md-12">

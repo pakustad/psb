@@ -14,7 +14,7 @@ $level = $user->level;?>
       <div class="panel panel-flat">
           <div class="panel-body">
               <center>
-                <img src="img/logo.png" alt="<?php echo $user->nama_lengkap; ?>" class="img-circle" width="176">
+                <img src="img/logo.svg" alt="<?php echo $user->nama_lengkap; ?>" class="img-circle" width="176">
               </center>
             <br>
             <fieldset class="content-group">
