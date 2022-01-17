@@ -303,14 +303,14 @@ class Panel_admin extends CI_Controller {
 					'status_verifikasi'	=> $sv
 				);
 				$this->db->update('tbl_siswa', $data, array('no_pendaftaran' => "$id"));
-				redirect('panel_admin/verifikasi');
+				redirect('panel_admin/verifikasi/thn');
 			}elseif ($aksi == 'thn') {
 				$thn = $id;
 			}else {
 				$thn = date('Y');
 			}
 			$this->db->like('tgl_siswa', "$thn", 'after');
-			$this->db->order_by('id_siswa', 'DESC');
+			// $this->db->order_by('id_siswa', 'DESC');
 			$data['v_siswa']  		= $this->db->get('tbl_siswa');
 			$data['v_thn']				= $thn;
 

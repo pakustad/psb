@@ -154,7 +154,7 @@ $sub_menu3 = strtolower($this->uri->segment(3));
 											} ?>"><a href="panel_admin"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
 								<li class="<?php if ($menu == 'panel_admin' and $sub_menu == 'verifikasi' or $sub_menu == 'edit_materi') {
 												echo 'active';
-											} ?>"><a href="panel_admin/verifikasi"><i class="icon-file-check"></i> <span>Verifikasi</span></a></li>
+											} ?>"><a href="panel_admin/verifikasi/thn"><i class="icon-file-check"></i> <span>Verifikasi</span></a></li>
 
 								<li class="<?php if ($menu == 'panel_admin' and $sub_menu == 'export') {
 												echo 'active';

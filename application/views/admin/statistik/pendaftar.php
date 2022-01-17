@@ -24,7 +24,7 @@ jQuery(function(){
    type: 'line',
   },
   title: {
-   text: 'Grafik Statistik Data Pendaftaran Tahun 2020/2021',
+   text: 'Grafik Statistik Data Pendaftaran Tahun 2022/2023',
    x: -20
   },
   subtitle: {
