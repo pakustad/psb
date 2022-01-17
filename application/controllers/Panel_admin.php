@@ -213,7 +213,75 @@ class Panel_admin extends CI_Controller {
 
 		}
 	}
+    
+	public function verifikasi_ubah_nilai($id = '')
+	{
+		$ceks = $this->session->userdata('un@sman1_belitang');
+		if (!isset($ceks)) {
+			redirect('panel_admin/log_in');
+		} else {
+			$data['user'] = $this->db->get_where('tbl_user', "username='$ceks'");
+			$data['judul_web'] = "Ubah Nilai";
 
+			$cek_siswa = $this->db->select()->from('tbl_siswa')->where('no_pendaftaran', $id);
+			if ($cek_siswa->count_all_results() == 0) {
+				redirect('panel_admin/verifikasi');
+			} else {
+				$data_siswa = $this->db->get_where('tbl_siswa', "no_pendaftaran='$id'")->row();
+				$data['siswa'] = $data_siswa;
+				$data['nilai'] = $this->db->get_where('tbl_nilai', "id_siswa='".$data_siswa->id_siswa."' ")->row();
+
+                if ($this->input->post('ubahnilai') !== null) {
+					$matematika = $this->input->post('nmatematika', true);
+					$b_inggris = $this->input->post('nb_inggris', true);
+					$ipa = $this->input->post('nipa', true);
+					$ips = $this->input->post('nips', true);
+					$b_t_alquran = $this->input->post('nb_t_alquran', true);
+					$e_conversation = $this->input->post('ne_conversation', true);
+					$minat = $this->input->post('minat', true);
+					if (!$matematika || !$b_inggris || !$ipa || !$ips || !$b_t_alquran || !$e_conversation || !$minat) {
+						$this->session->set_flashdata('msg',
+							'
+							<div class="alert alert-danger alert-dismissible" role="alert">
+								 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									 <span aria-hidden="true">&times;&nbsp; &nbsp;</span>
+								 </button>
+								 <strong>Gagal!</strong> Mohon mengisi semua input.
+							</div>'
+						);
+					} else {
+						$insert_data = array(
+							'id_siswa' => $data_siswa->id_siswa,
+							'matematika' => $matematika,
+							'b_inggris' => $b_inggris,
+							'ipa' => $ipa,
+							'ips' => $ips,
+							'b_t_alquran' => $b_t_alquran,
+							'e_conversation' => $e_conversation,
+							'minat' => $minat
+						);
+
+						$this->db->replace('tbl_nilai', $insert_data);
+						$this->session->set_flashdata('msg',
+							'
+							<div class="alert alert-success alert-dismissible" role="alert">
+								 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									 <span aria-hidden="true">&times;&nbsp; &nbsp;</span>
+								 </button>
+								 <strong>Sukses!</strong> Nilai berhasil diubah.
+							</div>'
+						);
+
+						redirect('panel_admin/verifikasi');
+					}
+				}
+
+				$this->load->view('admin/header', $data);
+				$this->load->view('admin/verifikasi/ubah_nilai', $data);
+				$this->load->view('admin/footer');
+			}
+		}
+	}
 
 	public function verifikasi($aksi='', $id='')
 	{

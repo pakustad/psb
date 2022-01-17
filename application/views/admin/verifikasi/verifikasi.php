@@ -65,6 +65,7 @@
                     <?php } ?>
                   </td>
                   <td align="center">
+                    <a href="panel_admin/verifikasi/ubah_nilai/<?php echo $baris->no_pendaftaran; ?>" class="btn btn-warning btn-xs" title="Ubah Nilai">Ubah Nilai</a>
                     <a href="panel_admin/verifikasi_cetak/<?php echo $baris->no_pendaftaran; ?>" class="btn btn-default btn-xs" title="Cetak Verifikasi" target="_blank"><i class="icon-printer2"></i></a>
                     <?php if ($baris->status_verifikasi == 0) {?>
                       <a href="panel_admin/verifikasi/cek/<?php echo $baris->no_pendaftaran; ?>" class="btn btn-info btn-xs" title="Verifikasi" onclick="return confirm('Apakah Anda yakin?')"><i class="icon-checkmark4"></i></a>

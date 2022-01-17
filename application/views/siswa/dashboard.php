@@ -30,7 +30,7 @@
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <center>
-                    <i class="glyphicon glyphicon-bullhorn"></i> Selamat <b><?php echo $nama; ?></b> <span class="label label-info" style="font-size:20px;">Lulus</span> Seleksi Sebagai Calon Peserta Didik Baru <b>SMA Pesantren Terpadu Hayatan Thayyibah</b>, Silahkan Cetak Surat Pengumuman Sebagai Bukti Lulus Seleksi.
+                    <i class="glyphicon glyphicon-bullhorn"></i> Selamat <b><?php echo $nama; ?></b> <span class="label label-info" style="font-size:20px;">Lulus</span> Seleksi Sebagai Peserta Didik Baru Di <b>SMA Pesantren Terpadu Hayatan Thayyibah</b>, Silahkan Cetak Surat Pengumuman Sebagai Bukti Lulus Seleksi.
                     <hr style="margin:0px;margin-bottom:10px;">
                     <a href="panel_siswa/cetak_lulus" class="btn btn-default btn-lg" target="_blank"><i class="icon-printer4"></i> Cetak Bukti Lulus</a>
                   </center>
@@ -44,7 +44,7 @@
                   <center>
                     <i class="glyphicon glyphicon-bullhorn"></i> Mohon Maaf <b><?php echo $nama; ?></b>
                      <span class="label label-danger" style="font-size:20px;">Tidak Lulus</span> 
-                    Sebagai Calon Peserta Didik Baru <b>SMA Pesantren Terpadu Hayatan Thayyibah</b>.
+                    Sebagai Peserta Didik Baru Di <b>SMA Pesantren Terpadu Hayatan Thayyibah</b>.
                   </center>
                 </h4>
               </div>

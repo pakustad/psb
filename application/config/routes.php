@@ -54,3 +54,4 @@ $route['404_override'] = 'web/error_not_found';
 $route['pendaftaran']  = 'web/pendaftaran';
 $route['logcs']        = 'web/logcs';
 $route['translate_uri_dashes'] = FALSE;
+$route['panel_admin/verifikasi/ubah_nilai/(:any)'] = 'panel_admin/verifikasi_ubah_nilai/$1';

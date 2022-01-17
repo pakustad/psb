@@ -102,6 +102,7 @@ class Panel_siswa extends CI_Controller {
 		$this->db->like('tgl_siswa', date('Y'), 'after');
 		$data['user'] 			= $this->db->get_where('tbl_siswa', "no_pendaftaran='$ceks'")->row();
 		$data['judul_web'] 	= "Cetak Bukti Lulus ".ucwords($data['user']->nama_lengkap);
+		$data['nilai'] = $this->db->get_where('tbl_nilai', "id_siswa='$ceks'")->row();
 
 		if ($data['user']->status_pendaftaran != 'lulus') {
 			redirect('404');

@@ -19,7 +19,7 @@ $user = $user->row();?>
       <div class="panel panel-flat">
           <div class="panel-body">
               <center>
-                <img src="assets/panel/images/default.png" alt="<?php echo $user->nama_lengkap; ?>" class="" width="176">
+                <img src="img/logo.svg" alt="<?php echo $user->nama_lengkap; ?>" class="" width="176">
               </center>
             <br>
             <fieldset class="content-group">
