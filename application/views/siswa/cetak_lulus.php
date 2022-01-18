@@ -61,7 +61,7 @@
 
     <center>
       <div style="border:1px solid black; width: 60%; padding: 10px;">
-        <b style="font-size: 18px;">Dinyatakan : <u style="font-size: 20px; color: blue; ">D I T E R I M A</u></b>
+        <b style="font-size: 18px;">Dinyatakan : <u style="font-size: 20px; color: green; ">D I T E R I M A</u></b>
       </div>
     </center>
     <br>
@@ -239,7 +239,7 @@
         <tr>
           <th width="330">Rata-rata</th>
           <th width="40">70</th>
-          <th width="105"><?= $rata2; ?></th>
+          <th width="105"><?= number_format((float)$rata2, 2, '.', ''); ?></th>
           <th></th>
         </tr>
       </table>
