@@ -262,23 +262,25 @@
         }
 
         .ttd {
-          position: absolute;
-          bottom: 180px;
-          z-index: 2;
+          padding-left: 40px;
         }
       </style>
       <tr>
-        <td style="width: 50%; padding-left: 25px;">
+        <td style="width: 55%; padding-left: 25px;">
           Mengetahui,<br>
           Kepala Sekolah,<br>
           <img src="img/ks_hatoy.png" alt="" width="40%"><br>
-          <b>Zaenal Arifin, S.TP., M.Pd.</b>
+          <b>Zaenal Arifin, S.T.P., M.Pd.</b>
         </td>
-        <td style="width: 50%; padding-left: 25px;">
-          Sukabumi, <?= format_tgl(date('Y-m-d')); ?><br>
-          Ketua PPDB,<br>
-          <img src="img/ttd1.jpg" alt="" width="60%"><br>
+        <td style="width: 45%; padding-left: 25px;">
+          <div class="ttd">
+            Sukabumi, <?= format_tgl(date('Y-m-d')); ?><br>
+            Ketua PPDB,<br>
+          </div>
+          <img src="img/ttd1.jpg" alt="" width="70%"><br>
+          <div class="ttd">
           <b>Abdul Kohar, S.Sos.I., M.M.</b>
+          </div>
         </td>
       </tr>
     </table>
