@@ -73,12 +73,12 @@
 
     <center>
       <?php
-      $mat = $this->db->get_where('tbl_nilai', array('id_siswa'))->row('matematika');
-      $ing = $this->db->get_where('tbl_nilai', array('id_siswa'))->row('b_inggris');
-      $ipa = $this->db->get_where('tbl_nilai', array('id_siswa'))->row('ipa');
-      $ips = $this->db->get_where('tbl_nilai', array('id_siswa'))->row('ips');
-      $btq = $this->db->get_where('tbl_nilai', array('id_siswa'))->row('b_t_alquran');
-      $conv = $this->db->get_where('tbl_nilai', array('id_siswa'))->row('e_conversation');
+      $mat = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('matematika');
+      $ing = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('b_inggris');
+      $ipa = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('ipa');
+      $ips = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('ips');
+      $btq = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('b_t_alquran');
+      $conv = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('e_conversation');
       ?>
       <table style="width: 100%;" border="1">
         <tr>
@@ -247,7 +247,7 @@
         <tr>
           <td width="20" style="text-align: center">7</td>
           <td width="305"> Pilihan Peminatan Berdasarkan Peserta Didik </td>
-          <td width="150" style="text-align: center;"><?= $this->db->get_where('tbl_nilai', array('id_siswa'))->row('minat'); ?></td>
+          <td width="150" style="text-align: center;"><?= $this->db->get_where('tbl_nilai', array('id_siswa'=> $user->id_siswa))->row('minat'); ?></td>
           <td></td>
         </tr>
       </table>
