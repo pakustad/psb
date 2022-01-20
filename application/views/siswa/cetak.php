@@ -37,7 +37,7 @@
     <b><center>
       PANITIA PENERIMAAN PESERTA DIDIK BARU (PPDB) <br>
       SMA PESANTREN TERPADU HAYATAN THAYYIBAH <br>
-      TAHUN PELAJARAN 2022/2023</center>
+      TAHUN PELAJARAN <?= $thn_ppdb; ?>/<?= $thn_ppdb+1; ?></center>
     </b>
     <br><br><br>
 
@@ -144,10 +144,10 @@
       Sukabumi, <?php echo $this->Model_data->tgl_id(date('d-m-Y')); ?> <br>
 			Ketua Panitia PPDB,  <br>
       <img src="img/ttd.jpg" alt="" width="250" alignt="right"><br>
-      <b><u>ABDUL KOHAR, S.Sos.I, M.M</u></b><br>
+      <b><u>ABDUL KOHAR, S.Sos.I, M.M</u></b><br><br><br>
       
     </div>
-    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
 	<?php $this->load->view('kop_lap'); ?><br><br>
     <b><u>Siapkan Berkas Berikut Ketika anda melakukan verifikasi :</u></b>
     <br>

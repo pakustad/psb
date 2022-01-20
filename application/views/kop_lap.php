@@ -4,9 +4,9 @@
       <img src="img/logo.svg" alt="logo2" width="80">
     </td>
     <td align="center">
-      <b style="font-size:23px;">PANITIA PENERIMAAN PESERTA DIDIK BARU (PPDB)</b> <br>
-      <b style="font-size:30px;">SMA PESANTREN TERPADU HAYATAN THAYYIBAH</b> <br>
-      <b style="font-size:20px;">TAHUN PELAJARAN 2022/2023</b>
+      <b style="font-size:20px;">PANITIA PENERIMAAN PESERTA DIDIK BARU (PPDB)</b> <br>
+      <b style="font-size:26px;">SMA PESANTREN TERPADU HAYATAN THAYYIBAH</b> <br>
+      <b style="font-size:18px;">TAHUN PELAJARAN <?= $thn_ppdb; ?>/<?= $thn_ppdb+1; ?></b>
     </td>
   </tr>
   <tr>

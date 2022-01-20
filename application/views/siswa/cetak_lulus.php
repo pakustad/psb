@@ -67,7 +67,7 @@
     <br>
 
     <div width="80%; font-size: 10px;">
-      Sebagai Peserta Didik di SMA Pesantren Terpadu Hayatan Thayyibah Tahun Pelajaran 2022/2023, dengan perolehan nilai sebagai berikut :
+      Sebagai Peserta Didik di SMA Pesantren Terpadu Hayatan Thayyibah Tahun Pelajaran <?= $thn_ppdb; ?>/<?= $thn_ppdb+1; ?>, dengan perolehan nilai sebagai berikut :
     </div>
     <br>
 

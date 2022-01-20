@@ -282,7 +282,7 @@
       </tr>
       <tr>
         <td valign="top">2.</td>
-        <td align="justify">Apabila ditemukan data nilai yang telah saya berikan tidak benar, maka saya bersedia dikenakan sanksi dan atau didiskualifikasi dari seleksi Penerimaan Peserta Didik Baru (PPDB) SMA Pesantren Terpadu Hayatan Thayyibah Tahun Pelajaran 2022/2023.</td>
+        <td align="justify">Apabila ditemukan data nilai yang telah saya berikan tidak benar, maka saya bersedia dikenakan sanksi dan atau didiskualifikasi dari seleksi Penerimaan Peserta Didik Baru (PPDB) SMA Pesantren Terpadu Hayatan Thayyibah Tahun Pelajaran <?= $thn_ppdb; ?>/<?= $thn_ppdb+1; ?>.</td>
       </tr>
     </table>
 

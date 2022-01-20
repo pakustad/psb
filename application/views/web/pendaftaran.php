@@ -73,7 +73,7 @@
               <!-- BEGIN USER DROPDOWN -->
               <li class="dropdown" id="language-header">
                 <a href="#" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                <span style="color:#ddd;">PPDB Tahun Ajaran <b class="text-danger" style="color:#fff;">2022/2023</b></span>
+                <span style="color:#ddd;">PPDB Tahun Ajaran <b class="text-danger" style="color:#fff;"><?= $thn_ppdb; ?>/<?= $thn_ppdb+1; ?></b></span>
                 </a>
               </li>
             </ul>
