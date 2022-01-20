@@ -271,18 +271,14 @@
         <td style="width: 50%; padding-left: 25px;">
           Mengetahui,<br>
           Kepala Sekolah,<br>
-          <img src="img/ks_hatoy.png" alt="" width="40%">
-          <div class="ttd">
+          <img src="img/ks_hatoy.png" alt="" width="40%"><br>
           <b>Zaenal Arifin, S.TP., M.Pd.</b>
-          </div>
         </td>
         <td style="width: 50%; padding-left: 25px;">
           Sukabumi, <?= format_tgl(date('Y-m-d')); ?><br>
           Ketua PPDB,<br>
-          <img src="img/ttd1.jpg" alt="" width="70%">
-          <div class="ttd">
+          <img src="img/ttd1.jpg" alt="" width="60%"><br>
           <b>Abdul Kohar, S.Sos.I., M.M.</b>
-          </div>
         </td>
       </tr>
     </table>
