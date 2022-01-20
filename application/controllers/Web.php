@@ -251,7 +251,7 @@ class Web extends CI_Controller {
 						 $username = $_POST['username'];
 						 $pass	   = $_POST['password'];
 
-						 $this->db->like('tgl_siswa', date('Y'), "after");
+						//  $this->db->like('tgl_siswa', date('Y'), "after");
 						 $query  = $this->db->get_where('tbl_siswa', "no_pendaftaran='$username'");
 						 $cek    = $query->result();
 						 $cekun  = $cek[0]->no_pendaftaran;

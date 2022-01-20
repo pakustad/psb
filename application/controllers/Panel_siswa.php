@@ -57,7 +57,7 @@ class Panel_siswa extends CI_Controller {
 		$data['user'] 			= $this->db->get_where('tbl_siswa', "no_pendaftaran='$ceks'")->row();
 		$data['judul_web'] 	= "Cetak Bukti Pendaftaran ".ucwords($data['user']->nama_lengkap);
 
-		$data['thn_ppdb'] 	= date('Y', strtotime($data['user']->tgl_siswa));
+		$data['thn_ppdb'] 	= date('Y');
 
 		$this->db->select_sum('rata_rata_nilai');
 		$data['nilai_rapor'] 	= $this->db->get_where('tbl_rapor', "no_pendaftaran='$ceks'")->row()->rata_rata_nilai / 5;
@@ -80,7 +80,7 @@ class Panel_siswa extends CI_Controller {
 		$data['user'] 			= $this->db->get_where('tbl_siswa', "no_pendaftaran='$ceks'")->row();
 		$data['judul_web'] 	= "Cetak Rekap Nilai ".ucwords($data['user']->nama_lengkap);
 
-		$data['thn_ppdb'] 	= date('Y', strtotime($data['user']->tgl_siswa));
+		$data['thn_ppdb'] 	= date('Y');
 
 		$this->db->select_sum('rata_rata_nilai');
 		$data['nilai_rapor'] 	= $this->db->get_where('tbl_rapor', "no_pendaftaran='$ceks'")->row()->rata_rata_nilai;
@@ -99,7 +99,7 @@ class Panel_siswa extends CI_Controller {
 		if(!isset($ceks)) {
 			redirect('logcs');
 		}
-		$this->db->like('tgl_siswa', date('Y'), 'after');
+		// $this->db->like('tgl_siswa', date('Y'), 'after');
 		$data['user'] 			= $this->db->get_where('tbl_siswa', "no_pendaftaran='$ceks'")->row();
 		$data['judul_web'] 	= "Cetak Bukti Lulus ".ucwords($data['user']->nama_lengkap);
 		$data['nilai'] = $this->db->get_where('tbl_nilai', "id_siswa='$ceks'")->row();
@@ -108,7 +108,7 @@ class Panel_siswa extends CI_Controller {
 			redirect('404');
 		}
 
-		$data['thn_ppdb'] 	= date('Y', strtotime($data['user']->tgl_siswa));
+		$data['thn_ppdb'] 	= date('Y');
 		$data['v_ket'] 			= $this->db->get_where('tbl_pengumuman', "id_pengumuman='1'")->row();
 
 		$this->load->view('siswa/cetak_lulus', $data);

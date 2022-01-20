@@ -32,7 +32,7 @@
     </center>
 
     <br>
-    Panitia PPDB SMA Pesantren Terpadu Hayatan Thayyibah, dengan ini menyatakan bahwa :<br /><br />
+    Panitia PPDB SMA Pesantren Terpadu Hayatan Thayyibah, dengan ini menyatakan bahwa :<br />
     <center>
       <table width="60%" border="0">
         <tr>
@@ -253,22 +253,39 @@
       </table>
     </center>
 
-    <br />
-    <center style="text-align: left;">
-      <span style="padding-right: 15%; float: left; margin-left: 30px;">
-        Mengetahui,<br>
-        Kepala Sekolah,<br>
-        <br><br><br>
-        <b>Zaenal Arifin, S.TP., M.Pd.</b>
-      </span>
-      <span style="padding-right: 15%; float: right;">
-        Sukabumi, <?= format_tgl(date('Y-m-d')); ?><br>
-        Ketua PPDB,<br>
-        <br><br><br>
-        <b>Abdul Kohar, S.Sos.I., M.M.</b>
-      </span>
-    </center>
-    <br><br><br><br><br><br>
+    <table style="width: 100%;">
+      <style>
+        img {
+          position: relative;
+          z-index: 1;
+          top: 0px;
+        }
+
+        .ttd {
+          position: absolute;
+          bottom: 180px;
+          z-index: 2;
+        }
+      </style>
+      <tr>
+        <td style="width: 50%; padding-left: 25px;">
+          Mengetahui,<br>
+          Kepala Sekolah,<br>
+          <img src="img/ks_hatoy.png" alt="" width="40%">
+          <div class="ttd">
+          <b>Zaenal Arifin, S.TP., M.Pd.</b>
+          </div>
+        </td>
+        <td style="width: 50%; padding-left: 25px;">
+          Sukabumi, <?= format_tgl(date('Y-m-d')); ?><br>
+          Ketua PPDB,<br>
+          <img src="img/ttd1.jpg" alt="" width="70%">
+          <div class="ttd">
+          <b>Abdul Kohar, S.Sos.I., M.M.</b>
+          </div>
+        </td>
+      </tr>
+    </table>
 
     <?php echo $v_ket->ket_pengumuman; ?>
   </div>

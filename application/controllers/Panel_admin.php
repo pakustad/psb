@@ -318,8 +318,6 @@ class Panel_admin extends CI_Controller
 			} else {
 				$thn = date('Y');
 			}
-			$this->db->like('tgl_siswa', "$thn", 'after');
-			// $this->db->order_by('id_siswa', 'DESC');
 			$data['v_siswa']  		= $this->db->get('tbl_siswa');
 			$data['v_thn']				= $thn;
 
@@ -447,8 +445,6 @@ class Panel_admin extends CI_Controller
 			} else {
 				$thn = date('Y');
 			}
-			$this->db->like('tgl_siswa', "$thn", 'after');
-			$this->db->order_by('id_siswa', 'DESC');
 			$data['v_siswa']  		= $this->db->get('tbl_siswa');
 			$data['v_thn']				= $thn;
 
