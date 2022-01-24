@@ -57,7 +57,7 @@ class Panel_siswa extends CI_Controller {
 		$data['user'] 			= $this->db->get_where('tbl_siswa', "no_pendaftaran='$ceks'")->row();
 		$data['judul_web'] 	= "Cetak Bukti Pendaftaran ".ucwords($data['user']->nama_lengkap);
 
-		$data['thn_ppdb'] 	= date('Y');
+		$data['thn_ppdb'] 	= $this->db->get_where('tbl_web')->row('thn_ppdb');;
 
 		$this->db->select_sum('rata_rata_nilai');
 		$data['nilai_rapor'] 	= $this->db->get_where('tbl_rapor', "no_pendaftaran='$ceks'")->row()->rata_rata_nilai / 5;
@@ -80,7 +80,7 @@ class Panel_siswa extends CI_Controller {
 		$data['user'] 			= $this->db->get_where('tbl_siswa', "no_pendaftaran='$ceks'")->row();
 		$data['judul_web'] 	= "Cetak Rekap Nilai ".ucwords($data['user']->nama_lengkap);
 
-		$data['thn_ppdb'] 	= date('Y');
+		$data['thn_ppdb'] 	= $this->db->get_where('tbl_web')->row('thn_ppdb');;
 
 		$this->db->select_sum('rata_rata_nilai');
 		$data['nilai_rapor'] 	= $this->db->get_where('tbl_rapor', "no_pendaftaran='$ceks'")->row()->rata_rata_nilai;
@@ -108,7 +108,7 @@ class Panel_siswa extends CI_Controller {
 			redirect('404');
 		}
 
-		$data['thn_ppdb'] 	= date('Y');
+		$data['thn_ppdb'] 	= $this->db->get_where('tbl_web')->row('thn_ppdb');
 		$data['v_ket'] 			= $this->db->get_where('tbl_pengumuman', "id_pengumuman='1'")->row();
 
 		$this->load->view('siswa/cetak_lulus', $data);

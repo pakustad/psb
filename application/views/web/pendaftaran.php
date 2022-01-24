@@ -48,9 +48,9 @@
     #pesan_komentar{font-weight: bold;color:red;}
   </style>
   <body class="fixed-topbar theme-sdtl color-green  sidebar-hover">
-    <!--[if lt IE 7]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+    <?php
+    $thn_ppdb = $this->db->get_where('tbl_web')->row('thn_ppdb');
+    ?>
     <section>
 
       <div class="main-content">
