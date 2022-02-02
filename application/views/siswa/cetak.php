@@ -168,7 +168,7 @@
       </tr>
 	  <tr>
         <td>3.</td>
-        <td>Bukti pembayaran biaya pendaftaran ke no rekening Bank Syariah Indonesia (BSI) KC Sukabumi (451-BSi) 7972621000 An. SMA Pesantren Hayatan Thayyibah</td>
+        <td>Bukti pembayaran biaya pendaftaran ke no rekening Bank Syariah Indonesia (BSI) KC Sukabumi (451-BSi) 7972521000  An. SMA Pesantren Hayatan Thayyibah</td>
         <td>:</td>
         <td>1 lembar</td>
 		<td width="10px">(&nbsp;&nbsp;))</td>
