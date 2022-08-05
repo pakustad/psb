@@ -1,44 +1,45 @@
       </div>
 
-    </div>
-    <!-- /main content -->
+      </div>
+      <!-- /main content -->
 
-  </div>
-  <!-- /page content -->
+      </div>
+      <!-- /page content -->
 
-</div>
-<!-- /page container -->
+      </div>
+      <!-- /page container -->
 
 
-<!-- Footer -->
-<div class="navbar navbar-default navbar-fixed-bottom footer">
-<ul class="nav navbar-nav visible-xs-block">
-<li><a class="text-center collapsed" data-toggle="collapse" data-target="#footer"><i class="icon-circle-up2"></i></a></li>
-</ul>
+      <!-- Footer -->
+      <div class="navbar navbar-default navbar-fixed-bottom footer">
+        <ul class="nav navbar-nav visible-xs-block">
+          <li><a class="text-center collapsed" data-toggle="collapse" data-target="#footer"><i class="icon-circle-up2"></i></a></li>
+        </ul>
 
-<div class="navbar-collapse collapse" id="footer">
-<div class="navbar-text">
-  &copy; 2018. <a href="#" class="navbar-link"></a>
-</div>
+        <div class="navbar-collapse collapse" id="footer">
+          <div class="navbar-text">
+            Copyright &copy; <a href="http://www.smahatoy.sch.id" target="_blank">SMA Pesantren Terpadu Hayatan Thayyibah</a> <?php echo date('Y'); ?> | IT Development <a href="#" class="navbar-link"></a>
+          </div>
 
-<!-- <div class="navbar-right">
+          <!-- <div class="navbar-right">
   <ul class="nav navbar-nav">
     <li><a href="#">About</a></li>
     <li><a href="#">Terms</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
 </div> -->
-</div>
-</div>
-<!-- /footer -->
+        </div>
+      </div>
+      <!-- /footer -->
 
-  <script type="text/javascript">
-  function hanyaAngka(evt) {
-    var charCode = (evt.which) ? evt.which : event.keyCode
-    if (charCode > 31 && (charCode < 48 || charCode > 57))
-      return false;
-    return true;
-  }
-  </script>
-</body>
-</html>
+      <script type="text/javascript">
+        function hanyaAngka(evt) {
+          var charCode = (evt.which) ? evt.which : event.keyCode
+          if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+          return true;
+        }
+      </script>
+      </body>
+
+      </html>
