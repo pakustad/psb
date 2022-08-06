@@ -1,4 +1,6 @@
-<?php $ceks = $this->session->userdata('no_pendaftaran'); ?>
+<?php
+$ceks = $this->session->userdata('no_pendaftaran');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -267,7 +269,7 @@
                                 </td>
                                 <td style="background: none 0% 0% repeat scroll rgb(189, 214, 238); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right-color: white; border-right-width: 1pt; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 106.3pt;" valign="top" width="177">
                                     <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
-                                        500.000<o:p style="box-sizing: border-box;"></o:p>
+                                        <?= number_format($reg->pendaftaran); ?><o:p style="box-sizing: border-box;"></o:p>
                                     </div>
                                 </td>
                                 <td style="background: none 0% 0% repeat scroll rgb(189, 214, 238); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right-color: white; border-right-width: 1pt; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 116.9pt;" valign="top" width="195">
@@ -289,7 +291,7 @@
                                 </td>
                                 <td style="background: none 0% 0% repeat scroll rgb(222, 234, 246); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right-color: white; border-right-width: 1pt; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 106.3pt;" valign="top" width="177">
                                     <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
-                                        16.000.000<o:p style="box-sizing: border-box;"></o:p>
+                                        <?= number_format($reg->bd_pangkal); ?><o:p style="box-sizing: border-box;"></o:p>
                                     </div>
                                 </td>
                                 <td style="background: none 0% 0% repeat scroll rgb(222, 234, 246); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right-color: white; border-right-width: 1pt; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 116.9pt;" valign="top" width="195">
@@ -311,7 +313,7 @@
                                 </td>
                                 <td style="background: none 0% 0% repeat scroll rgb(189, 214, 238); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right-color: white; border-right-width: 1pt; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 106.3pt;" valign="top" width="177">
                                     <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
-                                        2.500.000<o:p style="box-sizing: border-box;"></o:p>
+                                        <?= number_format($reg->bd_spp); ?><o:p style="box-sizing: border-box;"></o:p>
                                     </div>
                                 </td>
                                 <td style="background: none 0% 0% repeat scroll rgb(189, 214, 238); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right-color: white; border-right-width: 1pt; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 116.9pt;" valign="top" width="195">
@@ -333,7 +335,7 @@
                                 </td>
                                 <td style="background: none 0% 0% repeat scroll rgb(222, 234, 246); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right-color: white; border-right-width: 1pt; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 106.3pt;" valign="top" width="177">
                                     <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
-                                        3.250.000<o:p style="box-sizing: border-box;"></o:p>
+                                        <?= number_format($reg->tahunan); ?><o:p style="box-sizing: border-box;"></o:p>
                                     </div>
                                 </td>
                                 <td style="background: none 0% 0% repeat scroll rgb(222, 234, 246); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right-color: white; border-right-width: 1pt; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 116.9pt;" valign="top" width="195">
@@ -357,7 +359,7 @@
                                 </td>
                                 <td style="background: none 0% 0% repeat scroll rgb(189, 214, 238); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right-color: white; border-right-width: 1pt; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 106.3pt;" valign="top" width="177">
                                     <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
-                                        <span style="box-sizing: border-box; font-weight: 700;">22.250.000<o:p style="box-sizing: border-box;"></o:p></span>
+                                        <span style="box-sizing: border-box; font-weight: 700;"><?= number_format($reg->pendaftaran + $reg->bd_pangkal + $reg->bd_spp + $reg->tahunan); ?><o:p style="box-sizing: border-box;"></o:p></span>
                                     </div>
                                 </td>
                                 <td style="background: none 0% 0% repeat scroll rgb(189, 214, 238); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right-color: white; border-right-width: 1pt; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 116.9pt;" valign="top" width="195">
@@ -399,7 +401,7 @@
                                         <br style="box-sizing: border-box;">
                                     </div>
                                     <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
-                                        4.250.000<o:p style="box-sizing: border-box;"></o:p>
+                                        <?= number_format($reg->bd_paket); ?><o:p style="box-sizing: border-box;"></o:p>
                                     </div>
                                 </td>
                                 <td style="background: none 0% 0% repeat scroll rgb(222, 234, 246); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right-color: white; border-right-width: 1pt; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 116.9pt;" valign="top" width="195">
@@ -429,7 +431,7 @@
                                 </td>
                                 <td style="background: none 0% 0% repeat scroll rgb(189, 214, 238); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right-color: white; border-right-width: 1pt; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 106.3pt;" valign="top" width="177">
                                     <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
-                                        <span style="box-sizing: border-box; font-weight: 700;">26.500.000<o:p style="box-sizing: border-box;"></o:p></span>
+                                        <span style="box-sizing: border-box; font-weight: 700;"><?= number_format($reg->pendaftaran + $reg->bd_pangkal + $reg->bd_spp + $reg->tahunan + $reg->bd_paket); ?><o:p style="box-sizing: border-box;"></o:p></span>
                                     </div>
                                 </td>
                                 <td style="background: none 0% 0% repeat scroll rgb(189, 214, 238); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right-color: white; border-right-width: 1pt; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 116.9pt;" valign="top" width="195">
@@ -497,7 +499,7 @@
                                         <td style="background: none 0% 0% repeat scroll rgb(189, 214, 238); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 106.3pt;" valign="top" width="177">
                                             <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
                                                 <div style="margin: 0px;">
-                                                    500.000<o:p style="box-sizing: border-box;"></o:p>
+                                                    <?= number_format($reg->pendaftaran); ?><o:p style="box-sizing: border-box;"></o:p>
                                                 </div>
                                             </div>
                                         </td>
@@ -527,7 +529,7 @@
                                         <td style="background: none 0% 0% repeat scroll rgb(222, 234, 246); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 106.3pt;" valign="top" width="177">
                                             <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
                                                 <div style="margin: 0px;">
-                                                    8.000.000<o:p style="box-sizing: border-box;"></o:p>
+                                                    <?= number_format($reg->fd_pangkal); ?><o:p style="box-sizing: border-box;"></o:p>
                                                 </div>
                                             </div>
                                         </td>
@@ -557,7 +559,7 @@
                                         <td style="background: none 0% 0% repeat scroll rgb(189, 214, 238); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 106.3pt;" valign="top" width="177">
                                             <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
                                                 <div style="margin: 0px;">
-                                                    800.000<o:p style="box-sizing: border-box;"></o:p>
+                                                    <?= number_format($reg->fd_spp); ?><o:p style="box-sizing: border-box;"></o:p>
                                                 </div>
                                             </div>
                                         </td>
@@ -587,7 +589,7 @@
                                         <td style="background: none 0% 0% repeat scroll rgb(222, 234, 246); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 106.3pt;" valign="top" width="177">
                                             <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
                                                 <div style="margin: 0px;">
-                                                    3.250.000<o:p style="box-sizing: border-box;"></o:p>
+                                                    <?= number_format($reg->tahunan); ?><o:p style="box-sizing: border-box;"></o:p>
                                                 </div>
                                             </div>
                                         </td>
@@ -619,7 +621,9 @@
                                         <td style="background: none 0% 0% repeat scroll rgb(189, 214, 238); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 106.3pt;" valign="top" width="177">
                                             <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
                                                 <div style="margin: 0px;">
-                                                    <span style="box-sizing: border-box; font-weight: 700;">12.550.000<o:p style="box-sizing: border-box;"></o:p></span>
+                                                    <span style="box-sizing: border-box; font-weight: 700;"><?= number_format($reg->pendaftaran + $reg->fd_pangkal + $reg->fd_spp + $reg->tahunan); ?>
+                                                        <o:p style="box-sizing: border-box;"></o:p>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </td>
@@ -670,7 +674,7 @@
                                             </div>
                                             <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
                                                 <div style="margin: 0px;">
-                                                    <span style="font-family: inherit; font-style: inherit; font-weight: inherit;">3.250.000</span>
+                                                    <span style="font-family: inherit; font-style: inherit; font-weight: inherit;"><?= number_format($reg->fd_paket); ?></span>
                                                 </div>
                                             </div>
                                             <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
@@ -717,7 +721,9 @@
                                         <td style="background: none 0% 0% repeat scroll rgb(189, 214, 238); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 106.3pt;" valign="top" width="177">
                                             <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
                                                 <div style="margin: 0px;">
-                                                    <span style="box-sizing: border-box; font-weight: 700;">15.800.000<o:p style="box-sizing: border-box;"></o:p></span>
+                                                    <span style="box-sizing: border-box; font-weight: 700;"><?= number_format($reg->pendaftaran + $reg->bd_pangkal + $reg->bd_spp + $reg->tahunan + $reg->fd_paket); ?>
+                                                        <o:p style="box-sizing: border-box;"></o:p>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </td>

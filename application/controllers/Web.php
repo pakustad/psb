@@ -7,6 +7,7 @@ class Web extends CI_Controller
 	public function index()
 	{
 		$data['web_ppdb']	 = $this->db->get_where('tbl_web', "id_web='1'")->row();
+		$data['reg']		 = $this->db->get_where('tbl_biaya')->row();
 		$this->load->view('web/index', $data);
 	}
 
