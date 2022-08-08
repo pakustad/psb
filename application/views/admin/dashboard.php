@@ -3,7 +3,7 @@ $cek    = $user->row();
 $id_user = $cek->id_user;
 $nama    = $cek->nama_lengkap;
 $level   = $cek->level;
-
+$thn_ppdb = $this->db->get_where('tbl_web')->row('thn_ppdb');
 $tgl = date('m-Y');
 ?>
 
@@ -39,7 +39,7 @@ $tgl = date('m-Y');
                   <h3 class="no-margin">
                     <?= number_format($this->db->get('tbl_siswa')->num_rows(), 0, ",", "."); ?>
                   </h3>
-                  Calon Siswa yang mendaftar Tahun 2022-2023
+                  Calon Siswa yang mendaftar Tahun <?= $thn_ppdb; ?> - <?= $thn_ppdb + 1; ?>
                 </div>
               </div>
               <!-- /current server load -->
@@ -55,7 +55,7 @@ $tgl = date('m-Y');
                   <h3 class="no-margin">
                     <?= number_format($this->db->get_where('tbl_siswa', "status_pendaftaran='lulus'")->num_rows(), 0, ",", ".");  ?>
                   </h3>
-                  Calon Siswa yang Lulus PPDB Tahun 2022-2023
+                  Calon Siswa yang Lulus PPDB Tahun <?= $thn_ppdb; ?>/<?= $thn_ppdb + 1; ?>
                 </div>
               </div>
               <!-- /current server load -->
@@ -88,13 +88,13 @@ $tgl = date('m-Y');
     </div>
     <!-- /dashboard content -->
 
-    <!-- <div class="row">
+    <div class="row">
       <div class="panel panel-flat col-md-12">
         <div class="panel-body">
           <fieldset class="content-group">
-            <legend class="text-bold"><i class="icon-stats-dots"></i> Grafik Statistik Pendaftaran Siswa Tahun 2022/2023</legend>
-            <!?php $this->load->view('admin/statistik/pendaftar'); ?>
+            <legend class="text-bold"><i class="icon-stats-dots"></i> Grafik Statistik Pendaftaran Siswa Tahun <?= $thn_ppdb; ?> - <?= $thn_ppdb + 1; ?></legend>
+            <?php $this->load->view('admin/statistik/pendaftar'); ?>
           </fieldset>
         </div>
       </div>
-    </div> -->
+    </div>

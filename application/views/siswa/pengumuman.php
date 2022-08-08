@@ -61,7 +61,7 @@ $tgl = date('m-Y');
               <center>~ Informasi Teknis Pelaksanaan Kegiatan Tes PPDB ~</center>
             </h3>
             Assalaamualaikum Warahmatullaahi Wabarakaatuh.</br></br>
-            Kepada Yth calon siswa baru SMA Pesantren Terpadu Hayatan Thayyibah, berikut kami sampaikan susunan kegiatan Tes PPDB SMA Pesantren Terpadu Hayatan Thayyibah T.A. <?= $thn_ppdb; ?>/<?= $thn_ppdb + 1; ?> yang dilaksanakan secara online, Ahad, 16 Januari 2022 (Gelombang 1) dan 13 Maret 2022 (Gelombang 2), dengan ketentuan sbb:</br>
+            Kepada Yth calon siswa baru SMA Pesantren Terpadu Hayatan Thayyibah, berikut kami sampaikan susunan kegiatan Tes PPDB SMA Pesantren Terpadu Hayatan Thayyibah T.A. <?= $thn_ppdb; ?>/<?= $thn_ppdb + 1; ?> yang dilaksanakan secara di kampus SMA Pesantren Terpadu Hayatan Thayyibah, Ahad, 15 Januari 2023 (Gelombang 1) dan 12 Maret 2023 (Gelombang 2), dengan ketentuan sbb:</br>
             <ol>
               <li>Pukul 08.30 sd 10.15
                 <ul>
@@ -69,7 +69,7 @@ $tgl = date('m-Y');
                   <li>Orang tua : Mengikuti tes wawancara</li>
                 </ul>
               </li>
-              <li>Pukul 10.30 sd 12.00 tes BTQ/hafalan plus wawancara melalui video call (Didampingi orang tua)</li>
+              <li>Pukul 10.30 sd 12.00 tes BTQ/hafalan plus wawancara (Didampingi orang tua)</li>
               <li>Pukul 12.30 sd Pukul 15.00 tes English Conversation.</li>
             </ol>
             </br>Teknisnya panitia PPDB akan melakukan panggilan secara berurutan pada waktu yang telah ditentukan.
