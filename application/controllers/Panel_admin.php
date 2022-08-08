@@ -412,7 +412,6 @@ class Panel_admin extends CI_Controller
 		}
 	}
 
-
 	public function set_pengumuman($aksi = '', $id = '')
 	{
 		$ceks = $this->session->userdata('un@sman1_belitang');
@@ -450,6 +449,73 @@ class Panel_admin extends CI_Controller
 
 			$this->load->view('admin/header', $data);
 			$this->load->view('admin/set_pengumuman/set_pengumuman', $data);
+			$this->load->view('admin/footer');
+		}
+	}
+
+	public function set_biaya()
+	{
+		$ceks = $this->session->userdata('un@sman1_belitang');
+		if (!isset($ceks)) {
+			redirect('panel_admin/log_in');
+		} else {
+			$data['user']  			  = $this->db->get_where('tbl_user', "username='$ceks'");
+			$data['judul_web'] 		= "Setting Biaya";
+
+			$data['v_cost']  		= $this->db->get_where('tbl_biaya', "id='1'")->row();
+
+			if ($this->input->post('ubahnilai') !== null) {
+				$pendaftaran = $this->input->post('pendaftaran', true);
+				$bd_pangkal = $this->input->post('bd_pangkal', true);
+				$fd_pangkal = $this->input->post('fd_pangkal', true);
+				$bd_spp = $this->input->post('bd_spp', true);
+				$fd_spp = $this->input->post('fd_spp', true);
+				$tahunan = $this->input->post('tahunan', true);
+				$bd_paket = $this->input->post('bd_paket', true);
+				$fd_paket = $this->input->post('fd_paket', true);
+				if (!$pendaftaran || !$bd_pangkal || !$fd_pangkal || !$bd_spp || !$fd_spp || !$tahunan || !$bd_paket || !$fd_paket) {
+					$this->session->set_flashdata(
+						'msg',
+						'
+							<div class="alert alert-danger alert-dismissible" role="alert">
+								 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									 <span aria-hidden="true">&times;&nbsp; &nbsp;</span>
+								 </button>
+								 <strong>Gagal!</strong> Mohon isi semua biaya.
+							</div>'
+					);
+				} else {
+					$insert_data = array(
+						'pendaftaran' => $pendaftaran,
+						'bd_pangkal' => $bd_pangkal,
+						'fd_pangkal' => $fd_pangkal,
+						'bd_spp' => $bd_spp,
+						'fd_spp' => $fd_spp,
+						'tahunan' => $tahunan,
+						'bd_paket' => $bd_paket,
+						'fd_paket' => $fd_paket
+					);
+
+					// $this->db->where('id', $id);
+					$this->db->update('tbl_biaya', $insert_data);
+
+					$this->session->set_flashdata(
+						'msg',
+						'
+							<div class="alert alert-success alert-dismissible" role="alert">
+								 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									 <span aria-hidden="true">&times;&nbsp; &nbsp;</span>
+								 </button>
+								 <strong>Sukses!</strong> Biaya berhasil diubah.
+							</div>'
+					);
+
+					redirect('panel_admin/set_biaya');
+				}
+			}
+
+			$this->load->view('admin/header', $data);
+			$this->load->view('admin/set_pengumuman/set_biaya', $data);
 			$this->load->view('admin/footer');
 		}
 	}
@@ -583,7 +649,6 @@ class Panel_admin extends CI_Controller
 			$this->load->view('admin/footer');
 		}
 	}
-
 
 	public function logout()
 	{

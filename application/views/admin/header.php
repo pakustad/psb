@@ -32,6 +32,7 @@ $sub_menu3 = strtolower($this->uri->segment(3));
 	<link href="assets/panel/css/components.css" rel="stylesheet" type="text/css">
 	<link href="assets/panel/css/colors.css" rel="stylesheet" type="text/css">
 	<!-- /global stylesheets -->
+	<link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 	<!-- Core JS files -->
 	<script type="text/javascript" src="assets/panel/js/plugins/loaders/pace.min.js"></script>
@@ -159,6 +160,10 @@ $sub_menu3 = strtolower($this->uri->segment(3));
 								<li class="<?php if ($menu == 'panel_admin' and $sub_menu == 'export') {
 												echo 'active';
 											} ?>"><a href="panel_admin/export"><i class="icon-file-excel"></i> <span>Export Formulir</span></a></li>
+
+								<li class="<?php if ($menu == 'panel_admin' and $sub_menu == 'set_biaya') {
+												echo 'active';
+											} ?>"><a href="panel_admin/set_biaya"><i class="fa fa-money" aria-hidden="true"></i> <span>Setting Biaya</span></a></li>
 
 								<li class="<?php if ($menu == 'panel_admin' and $sub_menu == 'set_pengumuman') {
 												echo 'active';
