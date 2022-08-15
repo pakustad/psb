@@ -721,7 +721,7 @@ $ceks = $this->session->userdata('no_pendaftaran');
                                         <td style="background: none 0% 0% repeat scroll rgb(189, 214, 238); border-bottom-color: white; border-bottom-width: 1pt; border-bottom: 1pt solid white; border-left-style: none; border-right: 1pt solid white; border-style: none solid solid none; border-top-style: none; box-sizing: border-box; font-family: inherit; font-style: inherit; margin: 0px; outline: currentcolor none 0px; padding: 0cm 5.4pt; vertical-align: baseline; width: 106.3pt;" valign="top" width="177">
                                             <div align="right" class="MsoNormal" style="border: 0px none; box-sizing: border-box; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0.0001pt; outline: currentcolor none 0px; padding: 0px; text-align: right; vertical-align: baseline;">
                                                 <div style="margin: 0px;">
-                                                    <span style="box-sizing: border-box; font-weight: 700;"><?= number_format($reg->pendaftaran + $reg->bd_pangkal + $reg->bd_spp + $reg->tahunan + $reg->fd_paket); ?>
+                                                    <span style="box-sizing: border-box; font-weight: 700;"><?= number_format($reg->pendaftaran + $reg->fd_pangkal + $reg->fd_spp + $reg->tahunan + $reg->fd_paket); ?>
                                                         <o:p style="box-sizing: border-box;"></o:p>
                                                     </span>
                                                 </div>
