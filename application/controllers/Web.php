@@ -87,19 +87,19 @@ class Web extends CI_Controller
 			$rayonisasi				= $this->input->post('rayonisasi');
 			$tgl_siswa				= $this->Model_data->date('waktu_default');
 
-			if ($_POST['total_nilai'] < 10) {
-				$this->session->set_flashdata(
-					'msg',
-					'
-					<div class="alert alert-warning alert-dismissible" role="alert">
-						 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-							 <span aria-hidden="true">&times;&nbsp; &nbsp;</span>
-						 </button>
-						 <strong>Gagal Mendaftar PPDB Online!</strong> Maaf <b>' . $nama_lengkap . '</b> tidak bisa dilanjutkan, dikarenakan belum mengisi nilai. Terimakasih.
-					</div>'
-				);
-				redirect('pendaftaran');
-			}
+			// if ($_POST['total_nilai'] < 10) {
+			// 	$this->session->set_flashdata(
+			// 		'msg',
+			// 		'
+			// 		<div class="alert alert-warning alert-dismissible" role="alert">
+			// 			 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			// 				 <span aria-hidden="true">&times;&nbsp; &nbsp;</span>
+			// 			 </button>
+			// 			 <strong>Gagal Mendaftar PPDB Online!</strong> Maaf <b>' . $nama_lengkap . '</b> tidak bisa dilanjutkan, dikarenakan belum mengisi nilai. Terimakasih.
+			// 		</div>'
+			// 	);
+			// 	redirect('pendaftaran');
+			// }
 
 			$data = array(
 				'no_pendaftaran'		=> $no_pendaftaran,
