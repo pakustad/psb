@@ -11,11 +11,11 @@
 
       <li>Data-data yang diisikan pada form PPDB Online harus sesuai dengan data asli dan benar adanya.</li>
 
-      <li>Siapkan pas foto berwarna dalam format JPG maksimal berukuran 2MB yang akan di-upload melalui form pendaftaran PPDB Online.</li>
+      <!-- <li>Siapkan pas foto berwarna dalam format JPG maksimal berukuran 2MB yang akan di-upload melalui form pendaftaran PPDB Online.</li>
 
-      <li>Siapkan nilai rapor semester I dan II untuk pengisian kolom nilai yang akan dimasukkan dalam form isian nilai rapor pada PPDB Online.</li>
+      <li>Siapkan nilai rapor semester I dan II untuk pengisian kolom nilai yang akan dimasukkan dalam form isian nilai rapor pada PPDB Online.</li> -->
 
-      <li>Calon siswa yang sudah mendaftarkan secara online akan mendapatkan Nomor Pendaftaran yang harus dicetak dan dilampirkan dalam persyaratan yang diminta oleh Panitia PPDB SMA PESANTREN TERPADU HAYATAN THAYYIBAH.  </li>
+      <li>Calon siswa yang sudah mendaftarkan secara online akan mendapatkan Nomor Pendaftaran yang harus dicetak dan dilampirkan dalam persyaratan yang diminta oleh Panitia PPDB SMA PESANTREN TERPADU HAYATAN THAYYIBAH. </li>
 
       <li>Calon siswa yang sudah mendaftarkan diri melalui PPDB Online SMA PESANTREN TERPADU HAYATAN THAYYIBAH akan mendapatkan Nomor Pendaftaran dan Password yang nantinya akan digunakan untuk akses informasi yang berkaitan dengan PPDB SMA PESANTREN TERPADU HAYATAN THAYYIBAH.</li>
 

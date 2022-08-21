@@ -115,7 +115,7 @@
                           <div class="col-md-8">
                             <?php $this->load->view('web/step/1'); ?>
                             <div class="col-md-12">
-                              <span class="text-primary" style="font-size:18px;color:#222;"><strong>Apakah anda setuju dengan ketentuan diatas..?</strong></span>
+                              <span class="text-primary" style="font-size:18px;color:#222;"><strong>Apakah anda setuju dengan ketentuan diatas?</strong></span>
                               <div class="form-group" style="padding-bottom:30px;">
                                 <div class="radio bg-success" style="padding-top:10px;padding-bottom:10px;border-radius:3px;color:#222;">
                                   <label>
