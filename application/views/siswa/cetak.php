@@ -190,7 +190,7 @@
     </tr>
     <tr>
       <td>4.</td>
-      <td>Fotocopy Kartu Keluarga (KK)</td>
+      <td>Fotokopi Kartu Keluarga (KK)</td>
       <td>:</td>
       <td>1 lembar</td>
       <td width="10px">(&nbsp;&nbsp;))</td>
@@ -204,21 +204,21 @@
     </tr>
     <tr>
       <td>6.</td>
-      <td>Fotocopy rapor SMP/MTs. Semester 1 s.d 4 dilegalisir</td>
+      <td>Fotokopi rapor SMP/MTs. Semester 1 s.d 4 dilegalisir</td>
       <td>:</td>
       <td>1 lembar</td>
       <td width="10px">(&nbsp;&nbsp;))</td>
     </tr>
     <tr>
       <td>7.</td>
-      <td>Fotocopy nilai US dilegalisir (Jika sudah ada)</td>
+      <td>Fotokopi nilai US dilegalisir (Jika sudah ada)</td>
       <td>:</td>
       <td>1 lembar</td>
       <td width="10px">(&nbsp;&nbsp;))</td>
     </tr>
     <tr>
       <td>8.</td>
-      <td>Fotocopy Sertifikat/Piagam (Jika ada) </td>
+      <td>Fotokopi Sertifikat/Piagam (Jika ada) </td>
       <td>:</td>
       <td>1 lembar</td>
       <td width="10px">(&nbsp;&nbsp;))</td>

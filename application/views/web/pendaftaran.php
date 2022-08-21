@@ -92,12 +92,12 @@
         <div class="page-content page-wizard">
 
           <div class="header" style="margin-top:-20px;">
-            <h2>Form Pendaftaran PPDB Online <strong> SMA PESANTREN TERPADU HAYATAN THAYYIBAH</strong></h2>
+            <h2 style="text-align: center;">Form Pendaftaran PPDB Online <strong> SMA PESANTREN TERPADU HAYATAN THAYYIBAH</strong></h2>
             <hr style="margin-top:5px;">
 
           </div>
           <div class="row" style="margin-top:-30px;">
-            <div class="col-lg-12">
+            <div class="col-lg-12 col-md-offset-2">
 
               <div class="tabs tabs-linetriangle">
 
@@ -111,7 +111,7 @@
                         <fieldset>
                           <legend>Ketentuan</legend>
 
-                          <div class="col-md-2"></div>
+                          <!-- <div class="col-md-2"></div> -->
                           <div class="col-md-8">
                             <?php $this->load->view('web/step/1'); ?>
                             <div class="col-md-12">
@@ -133,7 +133,7 @@
                         <fieldset>
                           <legend>Data Siswa</legend>
                           <div class="row">
-                            <div class="col-md-2"></div>
+                            <!-- <div class="col-md-2"></div> -->
                             <div class="col-md-8">
                               <?php $this->load->view('web/step/2'); ?>
                             </div>
@@ -144,7 +144,7 @@
                         <fieldset>
                           <legend>Data Ortu / Wali</legend>
                           <div class="row">
-                            <div class="col-md-2"></div>
+                            <!-- <div class="col-md-2"></div> -->
                             <div class="col-md-8">
                               <?php $this->load->view('web/step/3'); ?>
                             </div>
@@ -155,7 +155,7 @@
                         <fieldset>
                           <legend>Data Sekolah</legend>
                           <div class="row">
-                            <div class="col-md-2"></div>
+                            <!-- <div class="col-md-2"></div> -->
                             <div class="col-md-8">
                               <?php $this->load->view('web/step/4'); ?>
                             </div>
@@ -186,14 +186,14 @@
                           <legend>Konfirmasi</legend>
                           <div class="row">
                             <div class="form-group">
-                              <div class="col-md-3">
-                              </div>
-                              <div class="col-md-6 panel p-20" style="text-align:center">
+                              <!-- <div class="col-md-3">
+                              </div> -->
+                              <div class="col-md-8 panel p-20" style="text-align:center">
                                 <i class="fa fa-info-circle faa-flash animated c-blue" style="font-size:97px"></i><br><br>
                                 <span style="font-size:15px">
                                   Proses PPDB Online SMA PESANTREN TERPADU HAYATAN THAYYIBAH hampir selesai. Silakan periksa kembali data-data calon siswa yang sudah anda masukkan.
                                   <br><br>
-                                  <div class="col-md-12">
+                                  <div class="col-md-12 text-center">
                                     <span class="text-primary" style="font-size:18px;"><strong>Apakah data calon siswa sudah sesuai dan lengkap?</strong></span>
                                     <div class="form-group">
                                       <div class="radio bg-success p-10" style="border-radius:3px;">
