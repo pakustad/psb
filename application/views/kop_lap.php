@@ -11,7 +11,7 @@
   </tr>
   <tr>
     <td colspan="2" align="center" style="font-size: 15px; padding-left: 95px;">
-      Sekretariat : Jl. Karamat No.123 Sukabumi <img src="img/telp.jpg" alt="telp." style="margin-bottom:-5px;margin-right:-5px;"> 0266-229851<img src="img/kode_pos.jpg" alt="Kode Pos." style="margin-bottom:-3px;margin-right:-5px;"> 43121
+      Sekretariat : Jl. Karamat No.123 Sukabumi <img src="img/telp.jpg" alt="telp." style="margin-bottom:-5px;margin-right:-5px;"> 0266-229851<img src="img/kode_pos.jpg" alt="Kode Pos." style="margin-bottom:-3px;margin-right:-5px;"> 43122
       <br>
       Website : https://psb.smahatoy.sch.id, e-mail : info@smahatoy.sch.id
     </td>
