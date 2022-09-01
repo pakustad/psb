@@ -78,7 +78,7 @@ $ceks = $this->session->userdata('no_pendaftaran');
         <div class="container">
             <div class="row">
                 <div class="col-lg-12"><br><br>
-                    <img class="img-responsive" src="img/logo.svg" style="margin-top:-15%;margin-bottom:-10px;" width="100">
+                    <img class="img-responsive" src="https://smahatoy.sch.id/uploads/images/slider/sekolah_penggerak.webp" style="margin-top:-15%;margin-bottom:-10px;" width="250">
                     <div class="intro-text"><br />
                         <span class="name shad" style="font-size:35px">PPDB ONLINE <br> SMA PESANTREN TERPADU HAYATAN THAYYIBAH</span>
 
@@ -122,21 +122,21 @@ $ceks = $this->session->userdata('no_pendaftaran');
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Tentang sekolah</h2>
+                    <h2>Booklet PPDB 2023-2024</h2>
                     <hr class="star-primary">
 
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 portfolio-item">
-                    <a href="http://www.smahatoy.sch.id" target="_blank" class="portfolio-link">
+                    <a href="https://drive.google.com/file/d/1hd4A7khy0tmzX2AQ1TLL1HozjDqtFLR7/view?usp=sharing" target="_blank" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
                         <img src="img/logo.svg" class="img-thumbnail" alt=""><br><br>
-                        <span class="btn btn-success btn-block">smahatoy.sch.id</span>
+                        <span class="btn btn-success btn-block">SMAS Hayatan Thayyibah</span>
                     </a>
                 </div>
 
