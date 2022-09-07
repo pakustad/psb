@@ -171,7 +171,7 @@
           </div>
         </td>
         <td>
-          Sukabumi,...................<?php echo $thn_ppdb; ?><br>
+          Sukabumi,...................<?php echo date('Y'); ?><br>
           Verifikator, <br>
           <br><br><br><br>
           (.............................................)

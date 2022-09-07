@@ -371,9 +371,9 @@ class Panel_admin extends CI_Controller
 			redirect('panel_admin/log_in');
 		}
 		$data['user'] 			= $this->db->get_where('tbl_siswa', "no_pendaftaran='$id'")->row();
-		$data['judul_web'] 	= "Cetak HASIL VERIFIKASI PENDAFTARAN PPDB " . ucwords($data['user']->nama_lengkap);
+		$data['judul_web'] 		= "Cetak HASIL VERIFIKASI PENDAFTARAN PPDB " . ucwords($data['user']->nama_lengkap);
 
-		$data['thn_ppdb'] 	= date('Y', strtotime($data['user']->tgl_siswa));
+		$data['thn_ppdb'] 		= $this->db->get_where('tbl_web')->row('thn_ppdb');
 
 		$this->db->select_sum('rata_rata_nilai');
 		$data['nilai_rapor'] 	= $this->db->get_where('tbl_rapor', "no_pendaftaran='$id'")->row()->rata_rata_nilai / 5;
