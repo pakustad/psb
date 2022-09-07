@@ -96,6 +96,11 @@
       <td><?php echo "$user->tempat_lahir, " . $this->Model_data->tgl_id($user->tgl_lahir); ?></td>
     </tr>
     <tr>
+      <td>ALAMAT</td>
+      <td>:</td>
+      <td><?php echo $user->alamat_siswa; ?></td>
+    </tr>
+    <tr>
       <td>AGAMA</td>
       <td>:</td>
       <td><?php echo $user->agama; ?></td>
