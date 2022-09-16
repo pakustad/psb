@@ -14,9 +14,14 @@ class Panel_admin extends CI_Controller
 			$data['web_ppdb']	 = $this->db->get_where('tbl_web', "id_web='1'")->row();
 			$data['judul_web'] = "Dashboard";
 
-			$thn							 = date('Y');
-			$data['v_thn']		 = $thn;
+			$thn				= $this->db->get_where('tbl_web')->row('thn_ppdb');
+			$data['v_thn']		= $thn;
 			foreach ($this->Model_data->statistik($thn)->result_array() as $row) {
+				$data['grafik'][] = (float)$row['Agustus'];
+				$data['grafik'][] = (float)$row['September'];
+				$data['grafik'][] = (float)$row['Oktober'];
+				$data['grafik'][] = (float)$row['Nopember'];
+				$data['grafik'][] = (float)$row['Desember'];
 				$data['grafik'][] = (float)$row['Januari'];
 				$data['grafik'][] = (float)$row['Februari'];
 				$data['grafik'][] = (float)$row['Maret'];
@@ -24,11 +29,7 @@ class Panel_admin extends CI_Controller
 				$data['grafik'][] = (float)$row['Mei'];
 				$data['grafik'][] = (float)$row['Juni'];
 				$data['grafik'][] = (float)$row['Juli'];
-				$data['grafik'][] = (float)$row['Agustus'];
-				$data['grafik'][] = (float)$row['September'];
-				$data['grafik'][] = (float)$row['Oktober'];
-				$data['grafik'][] = (float)$row['Nopember'];
-				$data['grafik'][] = (float)$row['Desember'];
+				break;
 			}
 
 			$this->load->view('admin/header', $data);

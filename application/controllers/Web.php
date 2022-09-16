@@ -43,12 +43,12 @@ class Web extends CI_Controller
 			$sql 		= $this->db->get('tbl_siswa');
 			$thn_ppdb = $this->db->get_where('tbl_web')->row('thn_ppdb');
 			if ($sql->num_rows() == 0) {
-				$no_reg   = substr($thn_ppdb, -2) . substr($thn_ppdb, -2) + 1 . '10001';
+				$no_reg   = substr($thn_ppdb, -2) . (substr($thn_ppdb, -2) + 1) . '10001';
 				$no_pendaftaran   = "PSB" . $no_reg;
 			} else {
 				$noUrut 	 	= substr($sql->row()->no_pendaftaran, 9, 3);
 				$noUrut++;
-				$no_reg	  = substr($thn_ppdb, -2) . substr($thn_ppdb, -2) + 1 . '10' . sprintf("%03s", $noUrut);
+				$no_reg	  = substr($thn_ppdb, -2) . (substr($thn_ppdb, -2) + 1) . '10' . sprintf("%03s", $noUrut);
 				$no_pendaftaran	  = "PSB" . $no_reg;
 			}
 

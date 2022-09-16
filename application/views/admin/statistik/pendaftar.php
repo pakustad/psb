@@ -32,21 +32,24 @@ $thn_ppdb = $this->db->get_where('tbl_web')->row('thn_ppdb');
         x: -20
       },
       subtitle: {
-        text: 'Jumlah Data Pendaftaran',
+        text: 'Jumlah Data Pendaftar',
         x: -20
       },
       xAxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun',
-          'Jul', 'Ags', 'Sep', 'Okt', 'Nov', 'Des'
+        categories: ['Ags', 'Sep', 'Okt', 'Nov', 'Des', 'Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun',
+          'Jul'
         ]
       },
       yAxis: {
         title: {
-          text: 'Total Data Pendaftaran'
+          text: 'Total Data Pendaftar'
         }
       },
+      tooltip: {
+        valueSuffix: ' Orang'
+      },
       series: [{
-        name: 'Data Pendaftaran Per-Bulan',
+        name: 'Data Pendaftar',
         data: <?php echo json_encode($grafik); ?>
       }]
     });
