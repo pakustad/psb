@@ -53,7 +53,7 @@ header("Expires: 0");
   <table width="100%" border="1">
     <tr>
       <th rowspan="4">No.</th>
-      <th rowspan="3" colspan="14">BIODATA SISWA</th>
+      <th rowspan="3" colspan="15">BIODATA SISWA</th>
       <th colspan="31">NILAI RAPOR</th>
       <th rowspan="1" colspan="9">NILAI USBN</th>
       <th rowspan="1" colspan="6">NILAI UNBK/UNKP</th>
@@ -104,6 +104,7 @@ header("Expires: 0");
       <th>ALAMAT SISWA</th>
       <th>STATUS DALAM KELUARGA</th>
       <th>NO. HANDPHONE</th>
+      <th>ASAL SEKOLAH</th>
       <?php for ($i = 1; $i <= 5; $i++) { ?>
         <th>1</th>
         <th>2</th>
@@ -153,6 +154,7 @@ header("Expires: 0");
         <td><?php echo $baris->status_keluarga; ?></td>
         <td><?php echo $baris->alamat_siswa; ?></td>
         <td><?php echo $baris->no_hp_siswa; ?></td>
+        <td><?php echo $baris->nama_sekolah; ?></td>
         <td><?php echo number_format($ipa->semester1, 2, ",", "."); ?></td>
         <td><?php echo number_format($ipa->semester2, 2, ",", "."); ?></td>
         <td><?php echo number_format($ipa->semester3, 2, ",", "."); ?></td>
