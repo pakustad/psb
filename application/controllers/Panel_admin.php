@@ -566,14 +566,14 @@ class Panel_admin extends CI_Controller
 			$data['user']  			    = $this->db->get_where('tbl_user', "username='$ceks'");
 			$data['judul_web']			= "Statistik Pendaftaran Siswa";
 
-			if ($aksi == 'thn') {
-				$thn = $id;
-			} else {
-				$thn = date('Y');
-			}
-			$data['v_thn']				= $thn;
-
+			$thn				= $this->db->get_where('tbl_web')->row('thn_ppdb');
+			$data['v_thn']		= $thn;
 			foreach ($this->Model_data->statistik($thn)->result_array() as $row) {
+				$data['grafik'][] = (float)$row['Agustus'];
+				$data['grafik'][] = (float)$row['September'];
+				$data['grafik'][] = (float)$row['Oktober'];
+				$data['grafik'][] = (float)$row['Nopember'];
+				$data['grafik'][] = (float)$row['Desember'];
 				$data['grafik'][] = (float)$row['Januari'];
 				$data['grafik'][] = (float)$row['Februari'];
 				$data['grafik'][] = (float)$row['Maret'];
@@ -581,14 +581,15 @@ class Panel_admin extends CI_Controller
 				$data['grafik'][] = (float)$row['Mei'];
 				$data['grafik'][] = (float)$row['Juni'];
 				$data['grafik'][] = (float)$row['Juli'];
-				$data['grafik'][] = (float)$row['Agustus'];
-				$data['grafik'][] = (float)$row['September'];
-				$data['grafik'][] = (float)$row['Oktober'];
-				$data['grafik'][] = (float)$row['Nopember'];
-				$data['grafik'][] = (float)$row['Desember'];
+				break;
 			}
 
 			foreach ($this->Model_data->statistik($thn, 'diverifikasi')->result_array() as $row) {
+				$data['grafik2'][] = (float)$row['Agustus'];
+				$data['grafik2'][] = (float)$row['September'];
+				$data['grafik2'][] = (float)$row['Oktober'];
+				$data['grafik2'][] = (float)$row['Nopember'];
+				$data['grafik2'][] = (float)$row['Desember'];
 				$data['grafik2'][] = (float)$row['Januari'];
 				$data['grafik2'][] = (float)$row['Februari'];
 				$data['grafik2'][] = (float)$row['Maret'];
@@ -596,14 +597,15 @@ class Panel_admin extends CI_Controller
 				$data['grafik2'][] = (float)$row['Mei'];
 				$data['grafik2'][] = (float)$row['Juni'];
 				$data['grafik2'][] = (float)$row['Juli'];
-				$data['grafik2'][] = (float)$row['Agustus'];
-				$data['grafik2'][] = (float)$row['September'];
-				$data['grafik2'][] = (float)$row['Oktober'];
-				$data['grafik2'][] = (float)$row['Nopember'];
-				$data['grafik2'][] = (float)$row['Desember'];
+				break;
 			}
 
 			foreach ($this->Model_data->statistik($thn, 'diterima')->result_array() as $row) {
+				$data['grafik3'][] = (float)$row['Agustus'];
+				$data['grafik3'][] = (float)$row['September'];
+				$data['grafik3'][] = (float)$row['Oktober'];
+				$data['grafik3'][] = (float)$row['Nopember'];
+				$data['grafik3'][] = (float)$row['Desember'];
 				$data['grafik3'][] = (float)$row['Januari'];
 				$data['grafik3'][] = (float)$row['Februari'];
 				$data['grafik3'][] = (float)$row['Maret'];
@@ -611,14 +613,15 @@ class Panel_admin extends CI_Controller
 				$data['grafik3'][] = (float)$row['Mei'];
 				$data['grafik3'][] = (float)$row['Juni'];
 				$data['grafik3'][] = (float)$row['Juli'];
-				$data['grafik3'][] = (float)$row['Agustus'];
-				$data['grafik3'][] = (float)$row['September'];
-				$data['grafik3'][] = (float)$row['Oktober'];
-				$data['grafik3'][] = (float)$row['Nopember'];
-				$data['grafik3'][] = (float)$row['Desember'];
+				break;
 			}
 
 			foreach ($this->Model_data->statistik($thn, 'tidak diterima')->result_array() as $row) {
+				$data['grafik4'][] = (float)$row['Agustus'];
+				$data['grafik4'][] = (float)$row['September'];
+				$data['grafik4'][] = (float)$row['Oktober'];
+				$data['grafik4'][] = (float)$row['Nopember'];
+				$data['grafik4'][] = (float)$row['Desember'];
 				$data['grafik4'][] = (float)$row['Januari'];
 				$data['grafik4'][] = (float)$row['Februari'];
 				$data['grafik4'][] = (float)$row['Maret'];
@@ -626,23 +629,19 @@ class Panel_admin extends CI_Controller
 				$data['grafik4'][] = (float)$row['Mei'];
 				$data['grafik4'][] = (float)$row['Juni'];
 				$data['grafik4'][] = (float)$row['Juli'];
-				$data['grafik4'][] = (float)$row['Agustus'];
-				$data['grafik4'][] = (float)$row['September'];
-				$data['grafik4'][] = (float)$row['Oktober'];
-				$data['grafik4'][] = (float)$row['Nopember'];
-				$data['grafik4'][] = (float)$row['Desember'];
+				break;
 			}
 
-			$this->db->like('tgl_siswa', "$thn", 'after');
+			// $this->db->like('tgl_siswa', "$thn", 'after');
 			$data['total_pendaftar'] 		 = $this->db->get("tbl_siswa")->num_rows();
 
-			$this->db->like('tgl_siswa', "$thn", 'after');
+			// $this->db->like('tgl_siswa', "$thn", 'after');
 			$data['total_diverifikasi'] 	 = $this->db->get_where("tbl_siswa", "status_verifikasi='1'")->num_rows();
 
-			$this->db->like('tgl_siswa', "$thn", 'after');
+			// $this->db->like('tgl_siswa', "$thn", 'after');
 			$data['total_diterima'] 			 = $this->db->get_where("tbl_siswa", "status_pendaftaran='lulus'")->num_rows();
 
-			$this->db->like('tgl_siswa', "$thn", 'after');
+			// $this->db->like('tgl_siswa', "$thn", 'after');
 			$data['total_tidak_diterima'] = $this->db->get_where("tbl_siswa", "status_pendaftaran='tidak lulus'")->num_rows();
 
 			$this->load->view('admin/header', $data);

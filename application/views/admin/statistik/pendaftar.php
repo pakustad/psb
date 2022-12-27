@@ -16,7 +16,6 @@ $thn_ppdb = $this->db->get_where('tbl_web')->row('thn_ppdb');
 
 <!-- /dashboard content -->
 
-<!-- <script src="assets/highcharts/jquery.min.js" type="text/javascript"></script> -->
 <script src="assets/panel/highcharts/highcharts.js" type="text/javascript"></script>
 <script src="assets/panel/highcharts/modules/exporting.js" type="text/javascript"></script>
 <script src="assets/panel/highcharts/modules/offline-exporting.js" type="text/javascript"></script>
@@ -53,13 +52,5 @@ $thn_ppdb = $this->db->get_where('tbl_web')->row('thn_ppdb');
         data: <?php echo json_encode($grafik); ?>
       }]
     });
-  });
-
-  function thn() {
-    var thn = $('[name="thn"]').val();
-    window.location = "panel_admin/statistik/thn/";
-  }
-  $('[name="thn"]').select2({
-    placeholder: "- Tahun -"
   });
 </script>
