@@ -413,6 +413,21 @@ class Panel_admin extends CI_Controller
 		}
 	}
 
+	public function set_info($aksi = '', $id = '')
+	{
+		$ceks = $this->session->userdata('un@sman1_belitang');
+		if (!isset($ceks)) {
+			redirect('panel_admin/log_in');
+		} else {
+			$data['user']  			  = $this->db->get_where('tbl_user', "username='$ceks'");
+			$data['judul_web'] 		= "Setting Pengumuman";
+
+			$this->load->view('admin/header', $data);
+			$this->load->view('admin/set_pengumuman/set_info', $data);
+			$this->load->view('admin/footer');
+		}
+	}
+
 	public function set_pengumuman($aksi = '', $id = '')
 	{
 		$ceks = $this->session->userdata('un@sman1_belitang');
@@ -518,6 +533,42 @@ class Panel_admin extends CI_Controller
 			$this->load->view('admin/header', $data);
 			$this->load->view('admin/set_pengumuman/set_biaya', $data);
 			$this->load->view('admin/footer');
+		}
+	}
+
+	public function edit_pengumuman($aksi = '', $id = '')
+	{
+		$ceks = $this->session->userdata('un@sman1_belitang');
+		if (!isset($ceks)) {
+			redirect('panel_admin/log_in');
+		} else {
+			$data['user']  			  = $this->db->get_where('tbl_user', "username='$ceks'");
+			$data['judul_web'] 		= "Edit Pengumuman";
+
+			$data['v_ket']	  		= $this->db->get_where('tbl_pengumuman', "id_pengumuman='1'")->row();
+
+			$this->load->view('admin/header', $data);
+			$this->load->view('admin/set_pengumuman/set_info', $data);
+			$this->load->view('admin/footer');
+
+			if (isset($_POST['updateInfo'])) {
+				$data = array(
+					'pra_pengumuman'	=> $this->input->post('pra_pengumuman')
+				);
+				$this->db->update('tbl_pengumuman', $data, array('id_pengumuman' => "1"));
+
+				$this->session->set_flashdata(
+					'msg',
+					'
+							<div class="alert alert-success alert-dismissible" role="alert">
+								 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									 <span aria-hidden="true">&times;&nbsp; &nbsp;</span>
+								 </button>
+								 <strong>Sukses!</strong> Pengumuman berhasil diperbarui.
+							</div>'
+				);
+				redirect('panel_admin/set_pengumuman');
+			}
 		}
 	}
 
