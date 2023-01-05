@@ -181,7 +181,7 @@
     </tr> -->
     <tr>
       <td style="vertical-align: top;">2.</td>
-      <td>Bukti pembayaran biaya pendaftaran ke no rekening Bank Syariah Indonesia (BSI) KC Sukabumi (451-BSI) 0285255613 An. ABDUL KOHAR</td>
+      <td>Bukti pembayaran biaya pendaftaran ke no rekening Bank Syariah Indonesia (BSI) KC Sukabumi (451-BSI) 2852556130 An. ABDUL KOHAR</td>
       <td style="vertical-align: top;">:</td>
       <td style="vertical-align: top;">1 lembar</td>
       <td width="10px" style="vertical-align: top;">(&nbsp;&nbsp;))</td>
