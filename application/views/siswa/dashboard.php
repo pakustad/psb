@@ -38,20 +38,12 @@ $tgl = date('m-Y');
               </div>
             </div>
           <?php } elseif ($cek->status_pendaftaran == 'tidak lulus') { ?>
-            <div class="panel panel-flat bg-warning">
+            <div class="panel panel-flat bg-primary">
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <center>
-                    <i class="glyphicon glyphicon-bullhorn"></i> Mohon Maaf <b><?php echo $nama; ?></b>
-                    <span class="label label-danger" style="font-size:20px;">Tidak Lulus</span>
-                    <span class="label label-danger" style="font-size:20px;">Tidak Lulus</span>
-                    <span class="label label-danger" style="font-size:20px;">Tidak Lulus</span>
-                    <span class="label label-danger" style="font-size:20px;">Tidak Lulus</span>
-                    <span class="label label-danger" style="font-size:20px;">Tidak Lulus</span>
-                    <span class="label label-danger" style="font-size:20px;">Tidak Lulus</span>
-                    <span class="label label-danger" style="font-size:20px;">Tidak Lulus</span>
-                    <span class="label label-danger" style="font-size:20px;">Tidak Lulus</span>
-                    <span class="label label-danger" style="font-size:20px;">Tidak Lulus</span>
+                    <i class="glyphicon glyphicon-bullhorn"></i> Untuk sementara <b><?php echo $nama; ?></b>
+                    <span class="label label-info" style="font-size:20px;">Masuk Daftar Tunggu</span>
                     Sebagai Peserta Didik Baru Di <b>SMA Pesantren Terpadu Hayatan Thayyibah</b>.
                   </center>
                 </h4>

@@ -32,17 +32,17 @@ $tgl = date('m-Y');
           </div>
         </div>
       <?php } elseif ($cek->status_pendaftaran == 'tidak lulus') { ?>
-        <div class="panel panel-warning">
+        <div class="panel panel-info">
           <div class="panel-heading">
             <h3 class="panel-title">
               <i class="glyphicon glyphicon-bullhorn"></i> Pengumuman
             </h3>
           </div>
-          <div class="panel-body" style="color:red">
+          <div class="panel-body">
             <h3>
               <center>
-                Mohon Maaf <b><?php echo $nama; ?></b>
-                <span class="label label-danger" style="font-size:20px;">Tidak Lulus</span> <br>
+                Untuk sementara <b><?php echo $nama; ?></b>
+                <span class="label label-info" style="font-size:20px;">Masuk Daftar Tunggu</span> <br>
                 Sebagai Peserta Didik Baru Di <b>SMA Pesantren Terpadu Hayatan Thayyibah</b>.
               </center>
               <br>
