@@ -1,14 +1,15 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Panel_siswa extends CI_Controller {
+class Panel_siswa extends CI_Controller
+{
 
 	public function index()
 	{
 		$ceks = $this->session->userdata('no_pendaftaran');
-		if(!isset($ceks)) {
+		if (!isset($ceks)) {
 			redirect('');
-		}else{
+		} else {
 			$data['user']   	 = $this->db->get_where('tbl_siswa', "no_pendaftaran='$ceks'");
 			$data['judul_web'] = "Dashboard";
 
@@ -21,9 +22,9 @@ class Panel_siswa extends CI_Controller {
 	public function pengumuman()
 	{
 		$ceks = $this->session->userdata('no_pendaftaran');
-		if(!isset($ceks)) {
+		if (!isset($ceks)) {
 			redirect('');
-		}else{
+		} else {
 			$data['user']   	 = $this->db->get_where('tbl_siswa', "no_pendaftaran='$ceks'");
 			$data['judul_web'] = "Pengumuman";
 
@@ -36,26 +37,27 @@ class Panel_siswa extends CI_Controller {
 	public function biodata()
 	{
 		$ceks = $this->session->userdata('no_pendaftaran');
-		if(!isset($ceks)) {
+		if (!isset($ceks)) {
 			redirect('logcs');
-		}else{
+		} else {
 			$data['user']  			  = $this->db->get_where('tbl_siswa', "no_pendaftaran='$ceks'");
- 			$data['judul_web'] 		= "Biodata ".ucwords($data['user']->row()->nama_lengkap);
+			$data['judul_web'] 		= "Biodata " . ucwords($data['user']->row()->nama_lengkap);
 
-					$this->load->view('siswa/header', $data);
-					$this->load->view('siswa/biodata', $data);
-					$this->load->view('siswa/footer');
+			$this->load->view('siswa/header', $data);
+			$this->load->view('siswa/biodata', $data);
+			$this->load->view('siswa/footer');
 		}
 	}
 
 
-	public function cetak() {
+	public function cetak()
+	{
 		$ceks = $this->session->userdata('no_pendaftaran');
-		if(!isset($ceks)) {
+		if (!isset($ceks)) {
 			redirect('logcs');
 		}
 		$data['user'] 			= $this->db->get_where('tbl_siswa', "no_pendaftaran='$ceks'")->row();
-		$data['judul_web'] 	= "Cetak Bukti Pendaftaran ".ucwords($data['user']->nama_lengkap);
+		$data['judul_web'] 	= "Cetak Bukti Pendaftaran " . ucwords($data['user']->nama_lengkap);
 
 		$data['thn_ppdb'] 	= $this->db->get_where('tbl_web')->row('thn_ppdb');;
 
@@ -72,13 +74,14 @@ class Panel_siswa extends CI_Controller {
 	}
 
 
-	public function rekap_nilai() {
+	public function rekap_nilai()
+	{
 		$ceks = $this->session->userdata('no_pendaftaran');
-		if(!isset($ceks)) {
+		if (!isset($ceks)) {
 			redirect('logcs');
 		}
 		$data['user'] 			= $this->db->get_where('tbl_siswa', "no_pendaftaran='$ceks'")->row();
-		$data['judul_web'] 	= "Cetak Rekap Nilai ".ucwords($data['user']->nama_lengkap);
+		$data['judul_web'] 	= "Cetak Rekap Nilai " . ucwords($data['user']->nama_lengkap);
 
 		$data['thn_ppdb'] 	= $this->db->get_where('tbl_web')->row('thn_ppdb');;
 
@@ -94,19 +97,20 @@ class Panel_siswa extends CI_Controller {
 		$this->load->view('siswa/rekap_nilai', $data);
 	}
 
-	public function cetak_lulus() {
+	public function cetak_lulus()
+	{
 		$ceks = $this->session->userdata('no_pendaftaran');
-		if(!isset($ceks)) {
+		if (!isset($ceks)) {
 			redirect('logcs');
 		}
 		// $this->db->like('tgl_siswa', date('Y'), 'after');
 		$data['user'] 			= $this->db->get_where('tbl_siswa', "no_pendaftaran='$ceks'")->row();
-		$data['judul_web'] 	= "Cetak Bukti Lulus ".ucwords($data['user']->nama_lengkap);
+		$data['judul_web'] 	= "Cetak Bukti Lulus " . ucwords($data['user']->nama_lengkap);
 		$data['nilai'] = $this->db->get_where('tbl_nilai', "id_siswa='$ceks'")->row();
 
-		if ($data['user']->status_pendaftaran != 'lulus') {
-			redirect('404');
-		}
+		// if ($data['user']->status_pendaftaran != 'lulus') {
+		// 	redirect('404');
+		// }
 
 		$data['thn_ppdb'] 	= $this->db->get_where('tbl_web')->row('thn_ppdb');
 		$data['v_ket'] 			= $this->db->get_where('tbl_pengumuman', "id_pengumuman='1'")->row();
@@ -114,11 +118,11 @@ class Panel_siswa extends CI_Controller {
 		$this->load->view('siswa/cetak_lulus', $data);
 	}
 
-	public function logout() {
+	public function logout()
+	{
 		if ($this->session->userdata('no_pendaftaran') != '') {
 			$this->session->sess_destroy();
 		}
-		 redirect('');
+		redirect('');
 	}
-
 }

@@ -43,7 +43,8 @@ $tgl = date('m-Y');
               <center>
                 Untuk sementara <b><?php echo $nama; ?></b>
                 <span class="label label-info" style="font-size:20px;">Masuk Daftar Tunggu</span> <br>
-                Sebagai Peserta Didik Baru Di <b>SMA Pesantren Terpadu Hayatan Thayyibah</b>.
+                Sebagai Peserta Didik Baru Di <b>SMA Pesantren Terpadu Hayatan Thayyibah</b>.<br /><br />
+                <a href="panel_siswa/cetak_lulus" class="btn btn-default btn-lg" target="_blank"><i class="icon-printer4"></i> Cetak SK Nilai Hasil Tes Seleksi</a>
               </center>
               <br>
             </h3>

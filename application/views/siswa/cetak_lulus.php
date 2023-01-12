@@ -58,28 +58,36 @@
       </table>
     </center>
     <br>
-
+    <?php
+    $mat = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('matematika');
+    $ing = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('b_inggris');
+    $ipa = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('ipa');
+    $ips = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('ips');
+    $btq = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('b_t_alquran');
+    $conv = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('e_conversation');
+    $rata2 = ($mat + $ing + $ipa + $ips + $btq + $conv) / 6;
+    ?>
     <center>
       <div style="border:1px solid black; width: 60%; padding: 10px;">
-        <b style="font-size: 18px;">Dinyatakan : <u style="font-size: 20px; color: green; ">D I T E R I M A</u></b>
+        <b style="font-size: 18px;">Dinyatakan :
+          <?php
+          if ($rata2 >= 70) {
+            echo '<u style="font-size: 20px; color: green; ">D I T E R I M A</u></b>';
+          } else {
+
+            echo '<u style="font-size: 20px; color: green; ">LULUS BERSYARAT</u></b>';
+          }
+          ?>
       </div>
     </center>
     <br>
 
     <div width="80%; font-size: 10px;">
-      Sebagai Peserta Didik di SMA Pesantren Terpadu Hayatan Thayyibah Tahun Pelajaran <?= $thn_ppdb; ?>/<?= $thn_ppdb+1; ?>, dengan perolehan nilai sebagai berikut :
+      Sebagai Peserta Didik di SMA Pesantren Terpadu Hayatan Thayyibah Tahun Pelajaran <?= $thn_ppdb; ?>/<?= $thn_ppdb + 1; ?>, dengan hasil test sebagai berikut :
     </div>
     <br>
 
     <center>
-      <?php
-      $mat = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('matematika');
-      $ing = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('b_inggris');
-      $ipa = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('ipa');
-      $ips = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('ips');
-      $btq = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('b_t_alquran');
-      $conv = $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('e_conversation');
-      ?>
       <table style="width: 100%;" border="1">
         <tr>
           <th width="330">Mata Uji Tes Tulis</th>
@@ -232,9 +240,6 @@
           <td></td>
         </tr>
       </table>
-      <?php
-      $rata2 = ($mat + $ing + $ipa + $ips + $btq + $conv) / 6;
-      ?>
       <table style="width: 100%;" border="1">
         <tr>
           <th width="330">Rata-rata</th>
@@ -247,7 +252,7 @@
         <tr>
           <td width="20" style="text-align: center">7</td>
           <td width="305"> Pilihan Peminatan Berdasarkan Peserta Didik </td>
-          <td width="150" style="text-align: center;"><?= $this->db->get_where('tbl_nilai', array('id_siswa'=> $user->id_siswa))->row('minat'); ?></td>
+          <td width="150" style="text-align: center;"><?= $this->db->get_where('tbl_nilai', array('id_siswa' => $user->id_siswa))->row('minat'); ?></td>
           <td></td>
         </tr>
       </table>
@@ -265,6 +270,7 @@
           padding-left: 40px;
         }
       </style>
+      <br />
       <tr>
         <td style="width: 55%; padding-left: 25px;">
           Mengetahui,<br>
@@ -279,14 +285,23 @@
           </div>
           <img src="img/ttd1.jpg" alt="" width="70%"><br>
           <div class="ttd">
-          <b>Abdul Kohar, S.Sos.I., M.M.</b>
+            <b>Abdul Kohar, S.Sos.I., M.M.</b>
           </div>
         </td>
       </tr>
     </table>
-
-    <?php echo $v_ket->ket_pengumuman; ?>
   </div>
+  <br /><br />
+  <?php
+  if ($rata2 < 70) {
+    echo 'Keterangan : 
+    <ul style="-">
+    <li> Bagi peserta yang dinyatakan lulus bersyarat, silakan menghubungi panitia PPDB untuk menyelesaikan persyaratannya</li>
+    </ul>';
+  } else {
+    echo $v_ket->ket_pengumuman;
+  }
+  ?>
 </body>
 
 </html>

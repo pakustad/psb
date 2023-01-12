@@ -208,7 +208,7 @@ $ceks = $this->session->userdata('no_pendaftaran');
                                     <!--    <li>Calon Siswa wajib mengambil <b>NOMOR TEST & Mengecek Ruang Ujian</b>.</li> -->
                                     <li>Calon Siswa wajib melakukan <b>TES SELEKSI AKADEMIK dan TES KESEHATAN</b>.</li>
                                     <li>PENGUMUMAN HASIL PPDB Online bisa dilihat di Web PPDB SMA PESANTREN TERPADU HAYATAN THAYYIBAH. Untuk <b>No. Pendaftaran</b> sesuaikan dengan <b>Formulir No. Pendaftaran</b> & <b>Passwordnya</b> yaitu <b>NISN</b> Calon Siswa tersebut.</li>
-                                    <li>Calon Siswa yang dinyatakan <b>LULUS</b> maka Wajib <b>Registrasi/Daftar Ulang dengan Membayar minimal 50% dari Total Biaya Pendidikan dan untuk pelunasannya paling lambat tanggal 9 Juli 2023</b> di <b>SMA PESANTREN TERPADU HAYATAN THAYYIBAH</b>.</li>
+                                    <li>Calon Siswa yang dinyatakan <b>LULUS</b> maka Wajib <b>Registrasi/Daftar Ulang dengan Membayar minimal 50% dari Total Biaya Pendidikan paling lambat 9 hari setelah informasi kelulusan dan untuk pelunasannya paling lambat tanggal 15 Juli 2023</b> di <b>SMA PESANTREN TERPADU HAYATAN THAYYIBAH</b>.</li>
                                 </ol>
                             </div>
                         </div>
